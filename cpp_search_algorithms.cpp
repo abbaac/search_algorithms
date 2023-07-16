@@ -87,5 +87,5 @@ int main(){
     
     //radixSort(test_array, len);
     //bubbleSort(test_array, len); 
-    binarySearch(test_array, len, 83);
+    binarySearch(test_array, len, 95);
 }
