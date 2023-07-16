@@ -18,6 +18,50 @@ function binarySearch(arr, target) {
   return -1; // not found
 }
 
+
+//Reversing a linked list (iteratively)
+function reverseLinkedlist(linkedList_head){
+  //have 3 pointers to track the posistion of the nodes.
+  current = head;
+  next = null;
+  prev = null;
+
+  while(current != null){
+    next = current.next
+    current.next = prev;
+    prev = current;
+    current = next;
+  }
+}
+
+
+//TREE TRAVERSAL'S
+function inorderTreeTraversal(rootNode){
+  if(rootNode != null){
+    inorderTreeTraversal(rootNode.left);
+    console.log(rootNode.data);
+    inoorderTreeTraversal(rootNode.right);
+  }
+}
+
+function preorderTreeTraversal(rootNode){
+  if(rootNode != null){
+    console.log(rootNode.data);
+    inorderTreeTraversal(rootNode.left);
+    inoorderTreeTraversal(rootNode.right);
+  }
+}
+
+function postorderTreeTraversal(rootNode){
+  if(rootNode != null){
+    inorderTreeTraversal(rootNode.left);
+    inoorderTreeTraversal(rootNode.right);
+    console.log(rootNode.data);
+  }
+}
+
+
+
 //GRAPH TRAVERSAL'S
 //-----------------------------------------------------------------//
 
